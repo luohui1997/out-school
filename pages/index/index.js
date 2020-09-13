@@ -25,7 +25,7 @@ Page({
       return
     }
     wx.navigateTo({
-      url: '../logs/logs?name=' + this.data.name
+      url: '../success/success?name=' + this.data.name
     })
   },
   bindName (e) {

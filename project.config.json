@@ -10,8 +10,8 @@
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
-		"coverView": true,
 		"autoAudits": false,
+		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
 		"checkInvalidKey": true,
@@ -22,13 +22,13 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.1",
 	"appid": "wx061985576af0a1be",
-	"projectname": "miniprogram-1",
+	"projectname": "out-school",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
