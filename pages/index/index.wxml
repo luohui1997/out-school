@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="name-input">
+    <text>请输入姓名：</text>
+    <input class="input" bindinput="bindName" value='{{name}}'/>
+  </view>
+  <view class="blank"></view>
+  <button class="info-button" open-type="getUserInfo" bindgetuserinfo="bindViewTap">OK</button>
+</view>
