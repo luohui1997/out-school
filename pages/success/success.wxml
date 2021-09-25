@@ -1,4 +1,4 @@
-<!--logs.wxml-->
+<!-- logs.wxml -->
 <view class="container log-list">
   <!-- <block wx:for="{{logs}}" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log}}</text>
@@ -13,7 +13,7 @@
   <view class="card">
     <image class="green-right" src="../../resources/green-right.png" mode="cover"></image>
     <view class="wish">祝你平安</view>
-    <view class="address">门岗-江宁校区南门（出门码）</view>
+    <view class="address">门岗-江宁校区东门（{{method}}门码）</view>
     <view class="time">{{time}}</view>
   </view>
   <view class="right">- 技术支持 南京河海科技有限公司 -</view>
