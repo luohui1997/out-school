@@ -1,8 +1,18 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
   <view class="name-input">
     <text>请输入姓名：</text>
-    <input class="input" bindinput="bindName" value='{{name}}'/>
+    <input class="input" bindinput="bindName" value='{{name}}' />
+  </view>
+  <view class="name-input">
+    <radio-group bindchange="outChange">
+      <label class="name-input" wx:for="{{method}}" wx:key="{{item.value}}">
+        <view class="weui-cell__hd">
+          <radio color='#6F86D6' value="{{item.value}}" checked="{{item.value == methodValue}}" />
+        </view>
+        <view class="weui-cell__bd">{{item.text}}</view>
+      </label>
+    </radio-group>
   </view>
   <view class="blank"></view>
   <button class="info-button" open-type="getUserInfo" bindgetuserinfo="bindViewTap">OK</button>
