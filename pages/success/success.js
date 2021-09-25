@@ -5,7 +5,8 @@ Page({
   data: {
     logs: [],
     userInfo: {},
-    time: util.formatTime(new Date())
+    time: util.formatTime(new Date()),
+    method: '进'
   },
   onLoad: function (option) {
     this.setData({
@@ -14,7 +15,8 @@ Page({
       }),
       'userInfo.avatarUrl': app.globalData.userInfo.avatarUrl,
       'userInfo.nickName': option.name,
-      time: util.formatTime(new Date())
+      time: util.formatTime(new Date()),
+      method: option.method
     })
   }
 })
